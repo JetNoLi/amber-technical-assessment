@@ -8,6 +8,15 @@ const jsOptions = require('./setupSwagger');
 const users = require('./routes/users');
 
 const app = express();
+
+//Enable CORS to access API on local machine in react app
+app.use((req, res, next) => {
+  res.append('Access-Control-Allow-Origin', ['*']);
+  res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.append('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
@@ -18,7 +27,7 @@ jsDocSwagger(app)(jsOptions);
 app.use('/users/', users);
 
 //Define port
-const port = 3000;
+const port = 8000;
 
 //Define mongoDB connection string and connect to mongoDB
 const connectString = "mongodb+srv://dbTestUser:dbTestPassword@cluster0.fk38z.mongodb.net/TechnicalProblemAmber?retryWrites=true&w=majority";
