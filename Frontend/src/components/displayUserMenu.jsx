@@ -13,8 +13,8 @@ const DisplayUserMenu = props => {
       pages[i - 1] = i;
     }
 
-    console.log(props.totalPages)
-    console.log(pages)
+    //console.log(props.totalPages)
+    //console.log(pages)
 
     return pages;
   }

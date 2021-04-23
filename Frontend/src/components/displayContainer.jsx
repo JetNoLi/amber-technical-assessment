@@ -47,8 +47,9 @@ const DisplayContainer = () => {
     console.log(key)
     setData(data.filter(user => user._id !== key));
     setInfo({...info, results : info.results -1});
-
-    if (!(data.length >= currentPage * 4) && currentPage !== 1){
+    console.log( data.length + " pg = " + currentPage);
+    if (!(data.length-1 > (currentPage-1) * 4)){
+      console.log(currentPage + " Here");
       setCurrentPage(currentPage -1);
     }
   }
