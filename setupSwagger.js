@@ -1,16 +1,19 @@
 const options = {
   info: {
     version: '1.0.0',
-    title: 'Albums store',
+    title: 'Users API',
     license: {
-      name: 'N/A',
+      name: 'No License',
     },
+    description: "API to access, create and delete users",
+
   },
+  
   security: {
-    BasicAuth: {
-      type: 'http',
-      scheme: 'basic',
-    },
+    //BasicAuth: {
+    //  type: 'http',
+    //  scheme: 'basic',
+    //},
   },
   baseDir: __dirname,
   // Glob pattern to find your jsdoc files (multiple patterns can be added in an array)
