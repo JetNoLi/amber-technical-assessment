@@ -1,0 +1,127 @@
+body{
+  background-color: linear-gradient(100deg, #ffecd2, #fcb69f);
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.smallFont{
+  font-size: smaller;
+  margin: 0%
+}
+
+.paginationContainer{
+  flex-direction: row;
+  display:flex;
+}
+
+.normalFont{
+  font-size: medium;
+  margin:0%
+}
+
+.imgContainer{
+  width:80%;
+  display:flex;
+  justify-content: center;
+}
+
+.displayContainer{
+  border: 3px solid rgb(153, 153, 153);
+  margin-top: 5vw;
+  background-color: rgb(172, 152, 166);
+}
+
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+  width: 80%
+}
+
+.card{
+  min-width:13vw;
+  max-width:13vw;
+  background: rosybrown;
+  border-radius: 2%;
+  /* box-shadow: 2px 2px 5px rgb(12, 114, 182); */
+  border: 2px solid salmon;
+  /* display:flex; */
+  justify-content: center;
+  
+}
+
+.selectableHover{
+  cursor: pointer
+}
+
+.cardText{
+  display:block;
+  justify-content: center;
+  align-self: center;
+}
+
+.cardButton{
+  position: absolute;
+  bottom: 0.4vw;
+  right: 0.5vw
+}
+
+.headingContainer{
+  display: block;
+}
+
+.headingDisplay{
+  text-align: center;
+}
+
+.centerTag{
+  display:flex;
+  justify-content: center;
+}
+
+
+
+.pictureDisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height:20vw;
+}
+
+
+
+.pic{
+  display: flex;
+  justify-content: center;
+}
+
+.userDisplayContainer{
+  background-color: #fcb69f;
+  width: 80%;
+
+}
+
+.userDisplayCard{
+  min-width: 70%
+}
+
+
+
+.test{
+  border: 2px blue solid;
+  
+}
+
+.testRed{
+  border: 2px red solid;
+  
+}
+
+.testGreen{
+  border: 2px green solid
+}
